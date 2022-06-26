@@ -1,0 +1,29 @@
+<link href = "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel = "stylesheet">
+<style>
+    body {
+        margin: 0;
+        background: black;
+    }
+    .bg-black {
+        opacity: 0.90
+    }
+    .text-white {
+        opacity: 1
+    }
+</style>
+<div class = "fixed text-white text-sm ml-3 mt-2 select-none font-mono">
+    <span>Score: </span>
+    <span id = "score">0</span>
+</div>
+<div class = "fixed inset-0 flex items-center justify-center text-white font-mono" id = "get_started">
+    <div class = "bg-black max-w-md w-full p-4 text-center rounded-xl">
+        <h1 class = "text-6xl font-bold text-center leading-tight" id = "final_score">0</h1>
+        <p class = "text-sm text-gray-750 text-center mb-4">Points</p>
+        <div>
+            <button class = "text-lg font-bold bg-blue-600 w-full rounded-xl font-bold text-3xl" id = "start">START</button>
+        </div>
+    </div>
+</div>
+<canvas></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src = "./game.js" ></script>
